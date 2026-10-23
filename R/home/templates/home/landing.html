@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if name == "Reza" %}
+        <h1>Hello, {{name}}</h1>
+        {% else %}
+        <h1>Hello World</h1>
+    {% endif %}
+<h1>hello world</h1>
+    <div>
+    {% for Reza in Rezas %}
+        <h2>{{Reza.title}}</h2>
+        <p>{{Reza.content}}</p>
+        <small>{{Reza.is_done}}</small>
+    {%endfor%}
+    </div>
+{% endblock %}
